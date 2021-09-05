@@ -31,9 +31,14 @@
 
 <script>
 import { ref } from "vue";
+import { useMeta } from "quasar";
 
 export default {
     setup() {
+        useMeta({
+            title: "Breaking bad api",
+        });
+
         const leftDrawerOpen = ref(false);
         const rightDrawerOpen = ref(false);
 
